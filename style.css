@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0;
+
+}
+body{
+    background-image: linear-gradient(to right,rgba(75, 4, 63, 0.993),rgb(192, 152, 107));
+    overflow: hidden;
+    color:rgb(255, 255, 255) ;
+    background-position: center;
+    text-align: center;
+
+}
+
+#todos{
+    color: rgba(75, 4, 63, 0.993);
+    padding: 100px ;
+    width: 600px;
+    margin: 0 auto;
+    height: auto;
+}
+
+#todos>.heading>h1{
+    display: inline;
+    position: relative;
+    font-size: 2.5rem;
+}
+.title{
+    color: rgb(252, 249, 249);
+}
+
+#todos>.todos-input-container> .todo_input{
+    width: 75%;
+    height: 40px;
+    margin: 25px;
+    font-size: 1.2rem;
+    text-align:center;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+
+}
+#todos>.todos-input-container>.add-item{
+    width: 40px;
+    height: 40px;
+    background-color:rgba(75, 4, 63, 0.993);
+    color: white;
+    padding-top:5px;
+    border-radius: 15px;
+    
+ 
+}
+
+
+#todos > .todo-list-container{
+    list-style:none;
+    margin: 30px 0 0;
+}
+#todos > .todo-list-container .todo-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: aliceblue;
+    color: black;
+    height: 40px;
+    
+}
+
+
+#todos > .todo-list-container .todo-list .button{
+    position: absolute;
+    right: 0;
+}
+
+
+#todos > .todo-list-container .todo-list .button button {
+    width: 50px;
+    height: 100px;
+    border: none;
+    color: rgba(75, 4, 63, 0.993);
+    outline: none;
+    cursor: pointer;
+}
+
+#todos > .todo-list-container .todo-list .button button i{
+    pointer-events: none;
+ 
+}
+
+
+.strike{
+    text-decoration: line-through;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+
+@media screen and (max-width: 600px){
+    #todos{
+        width: 100%;
+    }
+}
